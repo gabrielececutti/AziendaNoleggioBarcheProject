@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{B5F34415-076E-491E-A35F-BC73AA76B446}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AziendaNoleggioBarche/Core/Penalità.cs">
+    <Files>
+      <File FileName="AziendaNoleggioBarche/Testo.txt" Line="1" Column="34" />
+      <File FileName="AziendaNoleggioBarche/Core/Main.cs" Line="7" Column="10" />
+      <File FileName="AziendaNoleggioBarche/Core/Cliente.cs" Line="6" Column="5" />
+      <File FileName="AziendaNoleggioBarche/Core/Noleggio.cs" Line="13" Column="5" />
+      <File FileName="AziendaNoleggioBarche/Core/TariffaGiornaliera.cs" Line="12" Column="5" />
+      <File FileName="AziendaNoleggioBarche/Core/CostiExtra.cs" Line="13" Column="1" />
+      <File FileName="AziendaNoleggioBarche/Core/Penalità.cs" Line="7" Column="6" />
+      <File FileName="AziendaNoleggioBarche/Core/Promozione.cs" Line="8" Column="1" />
+      <File FileName="AziendaNoleggioBarche/Core/ImportoTotale.cs" Line="8" Column="11" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AziendaNoleggioBarche" expanded="True">
+            <Node name="AziendaNoleggioBarche" expanded="True">
+              <Node name="Core" expanded="True">
+                <Node name="Penalità.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+</Properties>

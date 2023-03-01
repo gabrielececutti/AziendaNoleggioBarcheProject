@@ -1,0 +1,15 @@
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.csproj.AssemblyReference.cache
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.AssemblyInfoInputs.cache
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.AssemblyInfo.cs
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.csproj.CoreCompileInputs.cache
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/bin/Debug/net7.0/AziendaNoleggioBarche
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/bin/Debug/net7.0/AziendaNoleggioBarche.deps.json
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/bin/Debug/net7.0/AziendaNoleggioBarche.runtimeconfig.json
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/bin/Debug/net7.0/AziendaNoleggioBarche.dll
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/bin/Debug/net7.0/AziendaNoleggioBarche.pdb
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.dll
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/refint/AziendaNoleggioBarche.dll
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.pdb
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/AziendaNoleggioBarche.genruntimeconfig.cache
+/Users/gabrielececutti/Desktop/C#.NET/ProgettoAziendaNoleggioBarche/AziendaNoleggioBarche/AziendaNoleggioBarche/obj/Debug/net7.0/ref/AziendaNoleggioBarche.dll
