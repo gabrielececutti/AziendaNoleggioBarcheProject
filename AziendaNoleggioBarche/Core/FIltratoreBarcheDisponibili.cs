@@ -3,8 +3,8 @@ namespace AziendaNoleggioBarche.Core
 {
     /*
 	 * cosa sa:
-	 * il noleggio desiderato dal cliente
-	 * Database Noleggi 
+	 * la barca
+	 * servizioSalvataggio.
 	 * 
 	 * stato concreto:
 	 * 

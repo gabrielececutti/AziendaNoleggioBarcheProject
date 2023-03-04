@@ -10,6 +10,7 @@ namespace AziendaNoleggioBarche.Core
 	 * luogo presa in consegna
 	 * luogo consegna (lo stesso)
 	 * tariffa giornaliera 
+	 * sconto
 	 * 
 	 * penalità: incidenti e danni, consegna in data o luogo diverso da quello concordato
 	 * 
@@ -17,6 +18,7 @@ namespace AziendaNoleggioBarche.Core
 	 * 
 	 * 
 	 * cosa sa fare:
+	 * calcolare il costo del noleggio eventualmente scontato
 	 * 
 	 */
 

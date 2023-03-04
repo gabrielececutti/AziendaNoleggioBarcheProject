@@ -1,4 +1,6 @@
 ﻿using System;
+using AziendaNoleggioBarche.Core;
+
 namespace AziendaNoleggioBarche.Infrastruttura
 {
 	/// <summary>
@@ -6,8 +8,13 @@ namespace AziendaNoleggioBarche.Infrastruttura
 	/// </summary>
 	public class ClientiDB
 	{
-		public ClientiDB()
+		List<Cliente>? Clienti { get; init; } // List???
+
+
+
+		public void Save (Cliente cliente)
 		{
+			Clienti.Add(cliente);
 		}
 	}
 }
