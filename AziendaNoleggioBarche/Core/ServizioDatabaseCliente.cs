@@ -17,7 +17,7 @@ namespace AziendaNoleggioBarche.Core
 	 * 
 	 */
 
-	public class ServizioSalvataggioCliente : ServizioPersistenzaCliente
+	public class ServizioSalvataggioCliente //: ServizioPersistenzaCliente
 	{
 		public ClientiDB DatabaseClienti { get; init; }
 

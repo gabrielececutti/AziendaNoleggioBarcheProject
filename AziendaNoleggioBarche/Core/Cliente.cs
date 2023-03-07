@@ -3,13 +3,17 @@ namespace AziendaNoleggioBarche.Core
 {
 	/*
 	 * cosa sa:
+	 * codice fiscale 
 	 * nome e cognome
+	 * data e luogo di nascita
 	 * registro noleggi effettuati (da cui deriva fedeltà)
 	 * 
-	 * 
 	 * stato concreto:
-	 * 
-	 * 
+	 * string CodiceFiscale
+	 * string nome
+	 * string cognome
+	 * DateOnly DataDiNascita
+	 * List<Noleggio> NoleggiEffettuati
 	 * 
 	 * cosa sa fare:
 	 * dire se il cliente è fedele
@@ -19,6 +23,11 @@ namespace AziendaNoleggioBarche.Core
 	 */
     public class Cliente
 	{
+		public string CodiceFiscale { get; init; }
+		public string Nome { get; init; }
+		public string Cognome { get; init; }
+		public DateOnly DataDiNascita { get; init; }
+		public List<Noleggio> NoleggiEffettuati { get; init; }
 
 
 		/// <summary>

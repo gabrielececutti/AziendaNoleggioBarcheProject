@@ -1,14 +1,9 @@
 ﻿<Properties StartupConfiguration="{255269F4-5848-4B42-95A0-C0B0B7A0ABED}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="Configurazione/Principale.cs">
     <Files>
-      <File FileName="Core/Noleggio.cs" Line="21" Column="59" />
-      <File FileName="Core/Sconto.cs" Line="1" Column="1" />
-      <File FileName="Core/TariffaGiornaliera.cs" Line="33" Column="13" />
+      <File FileName="Core/Noleggio.cs" />
+      <File FileName="Core/Sconto.cs" />
+      <File FileName="Core/TariffaGiornaliera.cs" />
       <File FileName="Core/TipoDiBarca.cs" />
       <File FileName="Infrastruttura/NoleggiDB.cs" />
       <File FileName="Infrastruttura/ClientiDB.cs" />
@@ -16,11 +11,10 @@
       <File FileName="Core/ServizioSalvataggioNoleggio.cs" />
       <File FileName="Core/ServizioPersistenzaCliente.cs" />
       <File FileName="Core/ServizioPersistenzaNoleggio.cs" />
-      <File FileName="Core/ServizioStampaSuFileCliente.cs" />
       <File FileName="Configurazione/Principale.cs" Line="11" Column="49" />
       <File FileName="Core/Cliente.cs" />
-      <File FileName="Core/FIltratoreBarcheDisponibili.cs" Line="6" Column="13" />
-      <File FileName="Core/PrenotatoreNoleggio.cs" Line="23" Column="88" />
+      <File FileName="Core/FIltratoreBarcheDisponibili.cs" />
+      <File FileName="Core/PrenotatoreNoleggio.cs" />
       <File FileName="Core/Penalità.cs" />
       <File FileName="Configurazione/RandomClienteFactory.cs" />
       <File FileName="Configurazione/RandomNoleggioFactory.cs" />
@@ -43,6 +37,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

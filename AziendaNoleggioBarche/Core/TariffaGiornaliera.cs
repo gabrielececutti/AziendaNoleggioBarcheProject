@@ -3,9 +3,7 @@ namespace AziendaNoleggioBarche.Core
 {
     /*
 	 * cosa sa:
-	 * dimensione
-	 * marca
-	 * altre caratteristiche (ad es con condizionatore, con televisione, con tendalini, età della barca, modello)
+	 * barca
 	 * costi extra
 	 * 
 	 * stato concreto:
@@ -22,9 +20,7 @@ namespace AziendaNoleggioBarche.Core
 
     public class TariffaGiornaliera
 	{
-		double Dimesione { get; init; }
-		string Marca { get; init; }
-		List<string> AltreCaratteristiche { get; init; }
+		
 		Dictionary<string, decimal> CostiExtra { get; init; }
 
 		public decimal Costo()

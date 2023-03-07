@@ -4,18 +4,45 @@ using AziendaNoleggioBarche.Core;
 namespace AziendaNoleggioBarche.Infrastruttura
 {
 	/// <summary>
-	/// Database che contiene tutti i clienti registrati.
+	/// Memorizza tutti i clienti in una struttura dati.
 	/// </summary>
 	public class ClientiDB
 	{
-		List<Cliente>? Clienti { get; init; } // List???
 
+		public Dictionary<string, Cliente> Clienti { get; init; }
 
+        public ClientiDB()
+        {
+            Clienti = new Dictionary<string, Cliente>();
+        }
 
-		public void Save (Cliente cliente)
-		{
-			Clienti.Add(cliente);
-		}
-	}
+        /// <summary>
+        /// Salva il cliente nel database.
+        /// </summary>
+        /// <param name="cliente"></param>
+        public void SaveOnDB(Cliente cliente)
+        {
+            CalcolatoreCodiceFiscale calcolatoreCodiceFiscale = new CalcolatoreCodiceFiscale(cliente);
+            string codiceFiscale = calcolatoreCodiceFiscale.Genera();
+            Clienti.Add(codiceFiscale, cliente);
+        }
+
+        /// <summary>
+        /// Ritorna tutto il database in formato stringa.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string output = "";
+            foreach (var item in Clienti)
+            {
+                string clienteToString = item.ToString();
+                output += clienteToString + "\n";
+            }
+            return output;
+        }
+
+    }
+
 }
 

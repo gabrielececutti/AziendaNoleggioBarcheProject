@@ -13,8 +13,6 @@
     <None Remove="Infrastruttura\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Core\" />
     <Folder Include="Configurazione\" />
-    <Folder Include="Infrastruttura\" />
   </ItemGroup>
 </Project>

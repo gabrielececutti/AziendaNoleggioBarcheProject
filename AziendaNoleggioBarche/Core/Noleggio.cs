@@ -4,7 +4,8 @@ namespace AziendaNoleggioBarche.Core
 	/*
 	 * cosa sa:
 	 * cliente 
-	 * barca, extra (pulizia a fine corciera, skipper, cuoco)
+	 * barca 
+	 * extra (pulizia a fine corciera, skipper, cuoco)
 	 * data e ora inizio noleggio
 	 * date e ora fine noleggio
 	 * luogo presa in consegna
@@ -25,7 +26,7 @@ namespace AziendaNoleggioBarche.Core
     public class Noleggio
 	{
 
-
+		 
 
 	}
 }
