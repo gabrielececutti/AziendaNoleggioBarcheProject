@@ -14,7 +14,7 @@ namespace AziendaNoleggioBarche.Core
         public TipoDiBarca TipoDiBarca { get; init; }
         public string Marca { get; init; }
         public double Dimensioni { get; init; }
-        public List<string> AltreCaratteristiche { get; init; } // farle lower case!!!!
+        public List<string> AltreCaratteristiche { get; init; } // farle lower case
         public bool Occupata { get; init; }
 
         public ServiziDatabaseBarche ServiziDatabaseBarche { get; init; }
@@ -35,9 +35,9 @@ namespace AziendaNoleggioBarche.Core
             Occupata = occupata;
         }
 
-        public void Save ()
+        public void Save()
         {
-            ServiziDatabaseBarche.SalvaBarcaNelDatabase(this);
+            ServiziDatabaseBarche.SalvaNelDatabase(this);
         }
 
         public override string ToString()

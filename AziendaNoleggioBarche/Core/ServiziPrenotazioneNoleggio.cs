@@ -24,44 +24,44 @@ namespace AziendaNoleggioBarche.Core
 	{
 
 		public Cliente? Cliente { get; init; }
-		public ServizioSalvataggioNoleggio? ServizioSalvataggioNoleggio { get;  init; }
+		public ServiziDatabaseNoleggio ServiziSalvataggioNoleggio { get;  init; }
 
 		/// <summary>
 		/// Ritrona la barca con le caratteristiche richieste dal cliente.
 		/// </summary>
 		/// <returns></returns>
-		public Barca GetBarcaRichiesta ()
-		{
-
-		}
+		//public Barca GetBarcaRichiesta ()
+		//{
+		
+		//}
 
 		/// <summary>
 		/// Ritorna tutte le barche che soddifano le richieste del cliente.
 		/// </summary>
 		/// <param name="barca"></param>
 		/// <returns></returns>
-		public Dictionary<int, Barca> GetBarcheDisponibili (Barca barcaRichiesta)
-		{
+		//public Dictionary<int, Barca> GetBarcheDisponibili (Barca barcaRichiesta)
+		//{
 
-		}
+		//}
 
 		/// <summary>
 		/// RETURN noleggio richiesto dal cliente con la prima barca risultata libera.
 		/// </summary>
 		/// <returns></returns>
-		public Noleggio GetNoleggioFromUser ()
-		{
+		//public Noleggio GetNoleggioFromUser ()
+		//{
 
-		}
+		//}
 
 		/// <summary>
 		/// RETURN tariffa giornaliera calcolata con gli eventuali sconti.
 		/// </summary>
 		/// <returns></returns>
-		public decimal CalcolaTariffa(Noleggio noleggio)
-		{
+		//public decimal CalcolaTariffa(Noleggio noleggio)
+		//{
 
-		}
+		//}
 
 		/// <summary>
 		/// Salva il noleggio nel database dei noleggi e nel registro noleggi dell'user.

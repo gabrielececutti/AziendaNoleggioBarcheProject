@@ -17,7 +17,7 @@ namespace AziendaNoleggioBarche.Core
         /// 
         /// </summary>
         /// <param name="barca"></param>
-        public void SalvaBarcaNelDatabase(Barca barca);
+        public void SalvaNelDatabase(Barca barca);
 
         /// <summary>
         /// 

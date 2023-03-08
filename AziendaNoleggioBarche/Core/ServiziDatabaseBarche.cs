@@ -2,34 +2,45 @@
 using AziendaNoleggioBarche.Infrastruttura;
 namespace AziendaNoleggioBarche.Core
 {
+	/// <summary>
+	/// Fornisce i servizi del database.
+	/// </summary>
 	public class ServiziDatabaseBarche : ServizioPersistenzaBarche
 	{
-		public BarcheDB BarcheDB { get; init; }
+		public readonly BarcheDB barcheDB;
 
 		public ServiziDatabaseBarche(BarcheDB barcheDB	)
 		{
-			BarcheDB = barcheDB;
+			this.barcheDB = barcheDB;
 		}
 
+		/// <summary>
+		/// Stampa a console tutto il database.
+		/// </summary>
 		public void StampaDatabaseOnConsole()
 		{
-			Console.WriteLine(BarcheDB.ToString());
+			Console.WriteLine(this.barcheDB.ToString());
 		}
 
-        public void SalvaBarcaNelDatabase(Barca barca)
+		/// <summary>
+		/// Salva la barca nel database.
+		/// </summary>
+		/// <param name="barca"></param>
+        public void SalvaNelDatabase(Barca barca)
         {
-			BarcheDB.SaveOnDB(barca);
+			this.barcheDB.Save(barca);
         }
 
-        public Dictionary<int, Barca> TrovaBarcheDisponibili(Barca barcaRichiesta)
-        {
-            throw new NotImplementedException();
-        }
+		/// <summary>
+		/// Ritorna tutte le barche disponibili che rispettano le caratteristiche richieste del cliente.
+		/// </summary>
+		/// <param name="barcaRichiesta"></param>
+		/// <returns></returns>
+		public Dictionary<int, Barca> TrovaBarcheDisponibili(Barca barcaRichiesta)
+		{
+			return this.barcheDB.GetBarcheDisponibili(barcaRichiesta);
+		}
 
-        public 
-
-		
-	
 	}
 }
 

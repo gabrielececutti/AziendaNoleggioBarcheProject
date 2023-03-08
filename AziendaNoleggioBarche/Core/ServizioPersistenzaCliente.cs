@@ -4,13 +4,16 @@ namespace AziendaNoleggioBarche.Core
 	public interface ServizioPersistenzaCliente
 	{
 
-		/// <summary>
-		/// salva il cliente nel database 
-		/// </summary>
-		/// <param name="cliente"></param>
-		public void Salva (Cliente cliente);
+        /// <summary>
+        /// Stampa a console tutto il database.
+        /// </summary>
+        public void StampaDatabaseOnConsole();
 
-		public void GetDatabase();
-	}
+        /// <summary>
+        /// Salva il cliente nel database.
+        /// </summary>
+        /// <param name="barca"></param>
+        public void SalvaNelDatabase(Cliente cliente);
+    }
 }
 

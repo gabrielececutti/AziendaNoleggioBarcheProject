@@ -1,6 +1,7 @@
 ﻿using System;
 using AziendaNoleggioBarche.Core;
 using AziendaNoleggioBarche.Infrastruttura;
+Console.WriteLine("hello");
 
 /*
  * VERIFCA DISPONIBILITA' DI BARCHE:
@@ -19,16 +20,6 @@ using AziendaNoleggioBarche.Infrastruttura;
  * stampare su un file di testo tutte le barche dell'azienda
  *
  */
-List<string> list = new List<string>();
-list.Add("condizionatore");list.Add("tv");
-Barca b = new Barca(01, TipoDiBarca.VELA, "defefv", 12, list, false);
-Barca b2 = new Barca(08, TipoDiBarca.VELA, "defefv", 12, list, false);
-BarcheDB data = new BarcheDB();
-data.SaveOnDB(b);
-data.SaveOnDB(b2);
-
-Console.WriteLine(data.ToString());
-
 
 
 

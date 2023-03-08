@@ -16,14 +16,14 @@ namespace AziendaNoleggioBarche.Infrastruttura
 
         public BarcheDB() 
         { 
-            Barche = new Dictionary<int, Barca> ();
+            Barche = new Dictionary<int, Barca>();
         }
 
         /// <summary>
         /// Salva la barca nel database.
         /// </summary>
         /// <param name="barca"></param>
-        public void SaveOnDB (Barca barca)
+        public void Save (Barca barca)
         {
             int codiceIdentificativo = barca.CodiceIdentificativo;
             Barche.Add(codiceIdentificativo, barca);

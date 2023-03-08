@@ -20,11 +20,10 @@ namespace AziendaNoleggioBarche.Infrastruttura
         /// Salva il cliente nel database.
         /// </summary>
         /// <param name="cliente"></param>
-        public void SaveOnDB(Cliente cliente)
+        public void Save(Cliente cliente)
         {
-            CalcolatoreCodiceFiscale calcolatoreCodiceFiscale = new CalcolatoreCodiceFiscale(cliente);
-            string codiceFiscale = calcolatoreCodiceFiscale.Genera();
-            Clienti.Add(codiceFiscale, cliente);
+            
+            Clienti.Add(cliente.CodiceFiscale, cliente);
         }
 
         /// <summary>

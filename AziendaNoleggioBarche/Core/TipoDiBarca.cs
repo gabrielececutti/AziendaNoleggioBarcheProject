@@ -3,7 +3,7 @@ namespace AziendaNoleggioBarche.Core
 {
 	public enum TipoDiBarca
 	{
-		VELA,
+		VELA, MOTOSCAFO, YACHT
 	}
 }
 

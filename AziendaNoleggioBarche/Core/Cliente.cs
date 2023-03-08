@@ -23,33 +23,56 @@ namespace AziendaNoleggioBarche.Core
 	 */
     public class Cliente
 	{
-		public string CodiceFiscale { get; init; }
-		public string Nome { get; init; }
-		public string Cognome { get; init; }
-		public DateOnly DataDiNascita { get; init; }
-		public List<Noleggio> NoleggiEffettuati { get; init; }
+		public string CodiceFiscale { get; }
+		public string Nome { get;  }
+		public string Cognome { get; }
+		public DateOnly DataDiNascita { get; }
+		public List<Noleggio> NoleggiEffettuati { get; }
 
+        public Cliente(string codiceFiscale, string nome, string cognome, DateOnly dataDiNascita, List<Noleggio> noleggiEffettuati)
+        {
+            CodiceFiscale = codiceFiscale;
+            Nome = nome;
+            Cognome = cognome;
+            DataDiNascita = dataDiNascita;
+            NoleggiEffettuati = noleggiEffettuati;
+        }
 
-		/// <summary>
-		/// Aggiunge il noleggio al registro dei noleggi effettuati dal cliente.
-		/// </summary>
-		/// <param name="noleggio"></param>
-		public  void AddNoleggio (Noleggio noleggio)
+        /// <summary>
+        /// Aggiunge il noleggio al registro dei noleggi effettuati dal cliente.
+        /// </summary>
+        /// <param name="noleggio"></param>
+        public  void AddNoleggio (Noleggio noleggio)
 		{
-
+			NoleggiEffettuati.Add(noleggio);
 		}
 
 
 		/// <summary>
-		/// Ritorna un valore booleano in base alla fedeltà del cliente.
+		/// Ritorna un valore booleano in base alla fedeltà del cliente. Il cliente è fedele se ha fatto almeno 5 noleggi.
 		/// </summary>
 		/// <returns><c>true</c> se il cliente è fedele, 
-		/// <c>false</c> se il cliente non è fedele</returns>
+		/// <c>false</c> altrimenti</returns>
 		public bool IsFedele ()
 		{
-			return false;
+			return NoleggiEffettuati.Capacity >= 5 ?  true : false;
 		}
-	
-	}
+
+		public string GetNoleggiEffettuati ()
+		{
+			string output = string.Empty;
+			foreach (var noleggio in NoleggiEffettuati)
+			{
+				output += noleggio.ToString() + "\n";
+			}
+			return output;
+		}
+
+        public override string ToString()
+        {
+			return $"Nome: {Nome} | cognome: {Cognome} | data di nascita: {DataDiNascita} | numero di noleggi effettuati: {NoleggiEffettuati.Count}";
+        }
+
+    }
 }
 

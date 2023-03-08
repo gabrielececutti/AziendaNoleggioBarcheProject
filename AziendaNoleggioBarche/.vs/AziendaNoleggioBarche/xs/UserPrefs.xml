@@ -1,35 +1,34 @@
 ﻿<Properties StartupConfiguration="{255269F4-5848-4B42-95A0-C0B0B7A0ABED}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Configurazione/Principale.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Core/CalcolatoreImporto.cs">
     <Files>
-      <File FileName="Core/Noleggio.cs" />
+      <File FileName="Core/Noleggio.cs" Line="38" Column="96" />
       <File FileName="Core/Sconto.cs" />
-      <File FileName="Core/TariffaGiornaliera.cs" />
+      <File FileName="Core/TariffaGiornaliera.cs" Line="17" Column="85" />
       <File FileName="Core/TipoDiBarca.cs" />
       <File FileName="Infrastruttura/NoleggiDB.cs" />
       <File FileName="Infrastruttura/ClientiDB.cs" />
-      <File FileName="Core/ServizioSalvataggioCliente.cs" />
-      <File FileName="Core/ServizioSalvataggioNoleggio.cs" />
       <File FileName="Core/ServizioPersistenzaCliente.cs" />
       <File FileName="Core/ServizioPersistenzaNoleggio.cs" />
-      <File FileName="Configurazione/Principale.cs" Line="11" Column="49" />
+      <File FileName="Configurazione/Principale.cs" />
       <File FileName="Core/Cliente.cs" />
-      <File FileName="Core/FIltratoreBarcheDisponibili.cs" />
-      <File FileName="Core/PrenotatoreNoleggio.cs" />
       <File FileName="Core/Penalità.cs" />
       <File FileName="Configurazione/RandomClienteFactory.cs" />
       <File FileName="Configurazione/RandomNoleggioFactory.cs" />
       <File FileName="Configurazione/NoleggioFromUserFactory.cs" />
-      <File FileName="Core/CalcolatoreImporto.cs" />
+      <File FileName="Core/CalcolatoreImporto.cs" Line="8" Column="40" />
+      <File FileName="Core/Barca.cs" Line="1" Column="1" />
+      <File FileName="Core/ServiziPrenotazioneNoleggio.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AziendaNoleggioBarche" expanded="True">
             <Node name="AziendaNoleggioBarche" expanded="True">
-              <Node name="Configurazione" expanded="True">
-                <Node name="Principale.cs" selected="True" />
+              <Node name="Configurazione" expanded="True" />
+              <Node name="Core" expanded="True">
+                <Node name="CalcolatoreImporto.cs" selected="True" />
               </Node>
-              <Node name="Core" expanded="True" />
               <Node name="Infrastruttura" expanded="True" />
             </Node>
           </Node>
@@ -43,5 +42,4 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

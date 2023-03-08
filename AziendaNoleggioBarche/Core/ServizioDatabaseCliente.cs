@@ -17,26 +17,32 @@ namespace AziendaNoleggioBarche.Core
 	 * 
 	 */
 
-	public class ServizioSalvataggioCliente //: ServizioPersistenzaCliente
+	public class ServiziDatabaseCliente : ServizioPersistenzaCliente 
 	{
-		public ClientiDB DatabaseClienti { get; init; }
+        private readonly ClientiDB clientiDB;
 
-
-		/// <summary>
-		/// Salva il cliente nel database.
-		/// </summary>
-		/// <param name="cliente"></param>
-        public void Salva(Cliente cliente)
+        public ServiziDatabaseCliente(ClientiDB clientiDB)
         {
-			DatabaseClienti.Save(cliente);
+            this.clientiDB = clientiDB;
         }
 
-
         /// <summary>
-        /// Non implementato in questa classe
+        /// Salva il cliente nel database.
         /// </summary>
         /// <param name="cliente"></param>
-        /// <exception cref="NotImplementedException"></exception>
+        public void SalvaNelDatabase(Cliente cliente)
+        {
+            this.clientiDB.Save(cliente);
+        }
+
+        /// <summary>
+        /// Stampa a console tutto il database.
+        /// </summary>
+        public void StampaDatabaseOnConsole()
+        {
+            Console.WriteLine(this.clientiDB.ToString());
+        }
+
         public void StampaSuFile(Cliente cliente)
         {
             throw new NotImplementedException();
