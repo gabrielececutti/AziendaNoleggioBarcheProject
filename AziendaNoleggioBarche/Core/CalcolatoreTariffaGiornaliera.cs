@@ -5,11 +5,11 @@ namespace AziendaNoleggioBarche.Core
     public static class CalcolatoreTariffaGiornaliera
 	{
 
-		public static double Calcola (Barca barca, List<string> costiExtra)
+		public static decimal Calcola (Noleggio noleggio)
 		{
 			return 0;
 		}
-		
+
 	}
 }
 

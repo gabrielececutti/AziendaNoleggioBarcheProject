@@ -22,7 +22,7 @@ namespace AziendaNoleggioBarche.Infrastruttura
         /// <param name="noleggio"></param>
         public void Save(Noleggio noleggio)
         {
-            Noleggi.Add(noleggio.NumeroNoleggio, noleggio);
+            Noleggi.Add(noleggio.Numero, noleggio);
         }
 
         /// <summary>

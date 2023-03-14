@@ -1,24 +1,28 @@
 ﻿<Properties StartupConfiguration="{255269F4-5848-4B42-95A0-C0B0B7A0ABED}|Default">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Core/CalcolatoreImporto.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Configurazione/Principale.cs">
     <Files>
-      <File FileName="Core/Noleggio.cs" Line="38" Column="96" />
-      <File FileName="Core/Sconto.cs" />
-      <File FileName="Core/TariffaGiornaliera.cs" Line="17" Column="85" />
-      <File FileName="Core/TipoDiBarca.cs" />
-      <File FileName="Infrastruttura/NoleggiDB.cs" />
-      <File FileName="Infrastruttura/ClientiDB.cs" />
-      <File FileName="Core/ServizioPersistenzaCliente.cs" />
-      <File FileName="Core/ServizioPersistenzaNoleggio.cs" />
-      <File FileName="Configurazione/Principale.cs" />
-      <File FileName="Core/Cliente.cs" />
+      <File FileName="Core/Sconto.cs" Line="32" Column="5" IsPinned="True" />
+      <File FileName="Core/TariffaGiornaliera.cs" Line="10" Column="13" IsPinned="True" />
+      <File FileName="Core/Noleggio.cs" Line="74" Column="1" IsPinned="True" />
+      <File FileName="Core/TipoDiBarca.cs" Line="1" Column="1" />
+      <File FileName="Infrastruttura/ClientiDB.cs" Line="1" Column="1" />
+      <File FileName="Core/ServizioPersistenzaCliente.cs" Line="1" Column="1" />
+      <File FileName="Core/ServizioPersistenzaNoleggio.cs" Line="1" Column="1" />
+      <File FileName="Configurazione/Principale.cs" Line="12" Column="223" />
+      <File FileName="Core/Cliente.cs" Line="68" Column="18" />
       <File FileName="Core/Penalità.cs" />
-      <File FileName="Configurazione/RandomClienteFactory.cs" />
-      <File FileName="Configurazione/RandomNoleggioFactory.cs" />
-      <File FileName="Configurazione/NoleggioFromUserFactory.cs" />
-      <File FileName="Core/CalcolatoreImporto.cs" Line="8" Column="40" />
+      <File FileName="Configurazione/RandomClienteFactory.cs" Line="1" Column="1" />
+      <File FileName="Configurazione/RandomNoleggioFactory.cs" Line="1" Column="1" />
+      <File FileName="Configurazione/NoleggioFromUserFactory.cs" Line="1" Column="1" />
       <File FileName="Core/Barca.cs" Line="1" Column="1" />
-      <File FileName="Core/ServiziPrenotazioneNoleggio.cs" />
+      <File FileName="Core/ServiziPrenotazioneNoleggio.cs" Line="61" Column="21" />
+      <File FileName="Core/ServiziDatabaseBarche.cs" Line="1" Column="1" />
+      <File FileName="Core/ServizioDatabaseNoleggio.cs" Line="1" Column="1" />
+      <File FileName="Core/ServizioPersistenzaBarche.cs" Line="1" Column="1" />
+      <File FileName="Infrastruttura/BarcheDB.cs" Line="1" Column="1" />
+      <File FileName="Infrastruttura/NoleggiDB.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -26,9 +30,7 @@
           <Node name="AziendaNoleggioBarche" expanded="True">
             <Node name="AziendaNoleggioBarche" expanded="True">
               <Node name="Configurazione" expanded="True" />
-              <Node name="Core" expanded="True">
-                <Node name="CalcolatoreImporto.cs" selected="True" />
-              </Node>
+              <Node name="Core" expanded="True" />
               <Node name="Infrastruttura" expanded="True" />
             </Node>
           </Node>
@@ -36,10 +38,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

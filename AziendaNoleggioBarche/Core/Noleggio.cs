@@ -21,27 +21,27 @@ namespace AziendaNoleggioBarche.Core
 	 * stato concreto:
 	 * 
 	 * 
-	 * cosa sa fare:
+	 * cosa sa fare:   
 	 * 
 	 * 
 	 */
 
     public class Noleggio
 	{
+        public int Numero { get; }
+		public Cliente Cliente { get; }
+		public Barca Barca { get; }
+		public Dictionary<string, decimal> Extra { get; }
+		public DateOnly Inizio { get; }
+		public DateOnly Fine { get; }
+		public string LuogoInizio { get; }
+		public string LuogoConsegana { get; }
+		public decimal ImportoTotale { get; }
 
-        public int NumeroNoleggio { get; init; }
-		public Cliente Cliente { get; init; }
-		public Barca Barca { get; init; }
-		public List<string> Extra { get; init; }
-		public DateOnly Inizio { get; init; }
-		public DateOnly Fine { get; init; }
-		public string LuogoInizio { get; init; }
-		public string LuogoConsegana { get; set; }
-		public double ImportoTotale { get; }
 
-        public Noleggio(int numeroNoleggio, Cliente cliente, Barca barca, List<string> extra, DateOnly inizio, DateOnly fine, string luogoInizio, string luogoConsegana)
+        public Noleggio(int numeroNoleggio, Cliente cliente, Barca barca, Dictionary<string, decimal> extra, DateOnly inizio, DateOnly fine, string luogoInizio, string luogoConsegana)
         {
-            NumeroNoleggio = numeroNoleggio;
+            Numero = numeroNoleggio;
             Cliente = cliente;
             Barca = barca;
             Extra = extra;
@@ -49,29 +49,23 @@ namespace AziendaNoleggioBarche.Core
             Fine = fine;
             LuogoInizio = luogoInizio;
             LuogoConsegana = luogoConsegana;
-			ImportoTotale = CalcolaImportoTotale(Cliente, Barca, Extra, Inizio, Fine);
+			ImportoTotale = CalcolaImportoTotale();
         }
-
-		private double CalcolaImportoTotale (Cliente cliente, Barca barca, List<string> extra, DateOnly inizio, DateOnly fine)
-		{
-			double tariffaGiornaliera = CalcolatoreTariffaGiornaliera.Calcola(barca, extra);
-			double sconto = CalcolatoreSconto.Calcola(barca, cliente, inizio, fine);
-			return tariffaGiornaliera - sconto;
-			
-		}
 
         public override string ToString()
         {
-			string datiBarca = Barca.ToString();
-			string datiCliente = Cliente.ToString();
-
-            string intestazione = "---------------------------------------------------------------------";
-			string core = $"Numero noleggio: {NumeroNoleggio}\nNoleggio effettuato dal cliente: {datiCliente}\nDati barca: {datiBarca}\nData inzio noleggio: {Inizio}, luogo di presa consegna: {LuogoConsegana}\nData fine noleggio: {Fine}, luogo di consegna: {LuogoConsegana}\nPrezzo totale: {ImportoTotale}euro.";
-			string piè = "---------------------------------------------------------------------";
-
-			return $"{intestazione}\n{core}\n{piè}";
+			// aggiungere extra
+            string intestazione = "-------------------------------------RIEPILOGO NOLEGGIO-------------------------------------";
+            string core = $"Numero noleggio: {Numero}\nNoleggio effettuato dal cliente: {Cliente.ToString()}\nDati barca: {Barca.ToString()}\nData inzio noleggio: {Inizio}, luogo di presa consegna: {LuogoConsegana}\nData fine noleggio: {Fine}, luogo di consegna: {LuogoConsegana}\nPrezzo: {ImportoTotale} euro.";
+            string piè = "--------------------------------------------------------------------------------------------";
+            return $"{intestazione}\n{core}\n{piè}";
         }
 
+        private decimal CalcolaImportoTotale()
+        {
+			decimal sconto = CalcolatoreSconto.Calcola(this) * CalcolatoreTariffaGiornaliera.Calcola(this);
+            return CalcolatoreTariffaGiornaliera.Calcola(this) - sconto;
+        }
     }
 }
 

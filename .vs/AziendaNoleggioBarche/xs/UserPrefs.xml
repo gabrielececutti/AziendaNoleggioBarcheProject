@@ -1,30 +1,18 @@
 ﻿<Properties StartupConfiguration="{B5F34415-076E-491E-A35F-BC73AA76B446}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AziendaNoleggioBarche/Core/Noleggio.cs">
+    <Files>
+      <File FileName="AziendaNoleggioBarche/Core/Noleggio.cs" Line="50" Column="39" IsPinned="True" />
+      <File FileName="AziendaNoleggioBarche/Core/Consegna.cs" Line="32" Column="90" IsPinned="True" />
+      <File FileName="AziendaNoleggioBarche/Core/CalcolatoreTariffaGiornaliera.cs" Line="10" Column="4" IsPinned="True" />
+      <File FileName="AziendaNoleggioBarche/Core/CalcolatoreSconto.cs" Line="40" Column="40" IsPinned="True" />
+      <File FileName="AziendaNoleggioBarche/Configurazione/Principale.cs" Line="1" Column="1" IsPinned="True" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.AziendaNoleggioBarche FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AziendaNoleggioBarche/Core/ServizioPersistenzaCliente.cs">
-    <Files>
-      <File FileName="AziendaNoleggioBarche/Core/ServizioPersistenzaCliente.cs" Line="17" Column="1" />
-      <File FileName="AziendaNoleggioBarche/Configurazione/NoleggioFromUserFactory.cs" Line="1" Column="1" />
-      <File FileName="AziendaNoleggioBarche/Core/Sconto.cs" Line="1" Column="1" />
-      <File FileName="AziendaNoleggioBarche/Core/ServizioStampaBarcheSuFile.cs" Line="1" Column="1" />
-    </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="AziendaNoleggioBarche" expanded="True">
-            <Node name="AziendaNoleggioBarche" expanded="True">
-              <Node name="Configurazione" expanded="True" />
-              <Node name="Core" expanded="True" selected="True" />
-              <Node name="Infrastruttura" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
-  </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

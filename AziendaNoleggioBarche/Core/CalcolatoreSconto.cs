@@ -10,34 +10,37 @@ namespace AziendaNoleggioBarche.Core
 	 *
 	 * 
 	 */
-    public static class CalcolatoreSconto
+    public class CalcolatoreSconto
 	{
 
+		public static DateOnly InizioStagione = new DateOnly (2023, 5, 1);
+		public static DateOnly FineStagione = new DateOnly(2023, 10, 1);
+
+
 		/// <summary>
-		/// Calcola lo sconto in base alle caratteristiche del noleggio e alla fedeltà del cliente.
+		/// Calcola un numero decimale che rappresenta sconto in base alle caratteristiche del noleggio e alla fedeltà del cliente.
 		/// </summary>
 		/// <param name="noleggio"></param>
-		/// <param name="cliente"></param>
-		/// <returns></returns>
-		public static double  Calcola (Barca barca, Cliente cliente, DateOnly inizio, DateOnly fine)
+		/// <returns><c>decimal</c> sconto</returns>
+		public static decimal Calcola (Noleggio noleggio)
 		{
-			double sconto = 0;
-			if (barca.TipoDiBarca.Equals(TipoDiBarca.VELA))
+			decimal sconto = 0;
+			if (noleggio.Cliente.IsFedele())
 			{
-				sconto += 100;
-			} else if (cliente.IsFedele())
+				sconto += 0.05m;
+			} else if ((noleggio.Inizio < InizioStagione && noleggio.Fine < InizioStagione) || (noleggio.Inizio > FineStagione && noleggio.Fine > FineStagione))
 			{
-				
-			} else if (true)
+				sconto += 0.2m;
+			} else if (noleggio.Barca.TipoDiBarca == TipoDiBarca.VELA)
 			{
-
-			} else if (true)
+				sconto += 0.04m;
+			}
+			foreach (var extra in noleggio.Extra)
 			{
-
+				sconto += extra.Value; // non è in percentuale !!!
 			}
 			return sconto;
-		}
-
+        }
 	}
 }
 
